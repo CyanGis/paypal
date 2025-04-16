@@ -9,7 +9,5 @@ export const PAYPAL_API = process.env.PAYPAL_API;
 
 // Server
 export const PORT = process.env.PORT || 3002;
-export const HOST =
-  process.env.NODE_ENV === "production"
-    ? process.env.HOST
-    : "http://localhost:" + PORT;
+export const HOST = process.env.HOST;
+

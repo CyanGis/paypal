@@ -1,7 +1,7 @@
 import { Router } from "express";
 import {
   createOrder,
-  captureOrder,
+  RegisterDonation,
   cancelPayment,
   getTransactionDetails
 } from "../controllers/payment.controller.js";
@@ -10,7 +10,7 @@ const router = Router();
 
 router.post("/create-order", createOrder);
 
-router.get("/capture-order", captureOrder);
+router.get("/capture-order", RegisterDonation);
 
 router.get("/cancel-order", cancelPayment);
 
